@@ -6,10 +6,10 @@ export default class GradeTable extends Component {
   constructor(props) {
     super(props);
 
+    this._deleteGrade = this._deleteGrade.bind(this);
   }
 
   _deleteGrade (id) {
-    console.log('should be deleting: ', id);
     GradeActions.deleteGrade(id);
   }
 

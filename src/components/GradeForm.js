@@ -56,21 +56,23 @@ export default class GradeForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this._submitForm} className="form-inline">
-        <div className="form-group">
-          <label htmlFor="NewAssignment">Assignment:</label>
-          <input ref="NewAssignment" type="text" className="form-control" id="NewAssignment" required/>
-        </div>
-        <div className="form-group">
-          <label htmlFor="NewTotal">Points Available:</label>
-          <input ref="NewTotal" type="number" className="form-control" id="NewScore" required min='0'/>
-        </div>
-        <div className="form-group">
-          <label htmlFor="NewScore">Sore:</label>
-          <input ref="NewScore" type="number" className="form-control" id="NewScore" required min='0'/>
-        </div>
-        <button className="btn btn-default">Add Grade</button>
-      </form>
+      <div className="row">
+        <form onSubmit={this._submitForm} className="form-inline">
+          <div className="form-group">
+            <label htmlFor="NewAssignment">Assignment:</label>
+            <input ref="NewAssignment" type="text" className="form-control" id="NewAssignment" required/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="NewTotal">Points Available:</label>
+            <input ref="NewTotal" type="number" className="form-control" id="NewScore" required min='0'/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="NewScore">Sore:</label>
+            <input ref="NewScore" type="number" className="form-control" id="NewScore" required min='0'/>
+          </div>
+          <button className="btn btn-primary">Add Grade</button>
+        </form>
+      </div>
     )
   }
 }

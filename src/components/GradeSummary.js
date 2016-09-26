@@ -7,11 +7,12 @@ export default class GradeTable extends Component {
   }
 
   render() {
-    const { grades } = this.props;
+    const { score, total, letter } = this.props.overall;
 
     return (
       <div className='row'>
-        Summary Here
+        <h2 className="text-center">Average Grade: {letter}</h2>
+        <h3 className="text-center">Total Score: {score}/{total}</h3>
       </div>
     )
   }

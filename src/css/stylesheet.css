@@ -1,0 +1,26 @@
+body {
+  background-color: #063133
+}
+
+.row {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+label {
+  margin: 10px;
+}
+
+input {
+  margin-right: 30px;
+}
+
+h1 {
+  color: white;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  vertical-align: middle;
+}

@@ -8,9 +8,7 @@ export default class GradeView extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      grades: GradeStore.getAll()
-    }
+    this.state = GradeStore.getAll()
 
     this._onChange = this._onChange.bind(this);
   }
@@ -24,17 +22,15 @@ export default class GradeView extends Component {
   }
 
   _onChange() {
-    this.setState({
-      grades: GradeStore.getAll()
-    })
+    this.setState( GradeStore.getAll() )
   }
 
   render() {
-    const { grades } = this.state;
+    const { grades, overall } = this.state;
 
     return (
       <div>
-        <GradeSummary grades={grades} />
+        <GradeSummary overall={overall} />
         <GradeTable grades={grades} />
       </div>
     )
